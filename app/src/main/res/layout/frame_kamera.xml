@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/autofocusable"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <SurfaceView
+        android:id="@+id/surfaceview"
+        android:layout_width="960px"
+        android:layout_height="720px"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/textviewtop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/focus" />
+
+    <TextView
+        android:id="@+id/textviewleft"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textviewtop"
+        android:background="@color/focus" />
+    <!--android:layout_above="@+id/textviewbottom"-->
+
+    <TextView
+        android:id="@+id/testviewright"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textviewtop"
+        android:background="@color/focus" />
+<!--
+    <TextView
+        android:id="@+id/textviewbottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/surfaceview"
+        android:background="@color/focus" />
+-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview_ocrpreview"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="test test test test\ntest test test test"
+        android:textColor="#ffffff"
+        android:background="#000000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview_previewsize"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:text="test test test test\ntest test test test"
+        android:textColor="#ffffff"
+        android:background="#000000"/>
+
+    <FrameLayout
+        android:id="@+id/focusframe"
+        android:layout_width="960px"
+        android:layout_height="720px"
+        android:layout_centerInParent="true">
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/capture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Capture Picture"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/testviewright"
+        android:layout_alignEnd="@+id/testviewright" />
+    <Button
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start OCR"
+        android:layout_alignRight="@+id/testviewright"
+        android:layout_above="@+id/capture" />
+
+
+</RelativeLayout>
