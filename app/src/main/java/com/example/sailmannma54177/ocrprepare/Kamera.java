@@ -50,7 +50,7 @@ import static java.lang.Math.sqrt;
 
 public class Kamera extends Activity implements SurfaceHolder.Callback {
 
-//old
+//olddfdfdf
 
     Camera camera;
     SurfaceView surfaceView;
